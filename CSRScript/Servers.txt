@@ -1,3 +1,2 @@
-myserver1
-myserver2
-myserver3
+LAX-QPAIR01
+LAXTESTME

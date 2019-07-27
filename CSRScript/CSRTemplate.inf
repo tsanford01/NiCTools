@@ -12,7 +12,7 @@ KeyUsage = 0xA0
 ProviderName = "Microsoft RSA SChannel Cryptographic Provider"
 ProviderType = 12
 MachineKeySet = True
-FriendlyName=server1
+FriendlyName=@sitename
 
 [Strings]  
 szOID_PKIX_KP_SERVER_AUTH = "1.3.6.1.5.5.7.3.1"

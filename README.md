@@ -1,2 +1,2 @@
 # NiCTools
-A place to create Tools for NiCOps
+A place to create Tools for Nice inContact AppOps Teams

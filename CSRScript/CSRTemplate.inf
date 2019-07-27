@@ -8,13 +8,10 @@ Subject = "CN=@domain, O=NICE inContact, OU=WFO Architecture, L=Sandy, S=UT"
 KeySpec = 1
 KeyLength = 2048
 Exportable = TRUE
-KeySpec = 1
-KeyLength = 2048
 KeyUsage = 0xA0
 ProviderName = "Microsoft RSA SChannel Cryptographic Provider"
 ProviderType = 12
 MachineKeySet = True
-Exportable = TRUE
 FriendlyName=server1
 
 [Strings]  

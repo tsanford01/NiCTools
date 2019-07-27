@@ -14,9 +14,10 @@ if ($enviro -like "Lab") {
     }
     else {
         $password = Get-Content C:\Users\$user\Documents\Lab.txt | ConvertTo-SecureString
-        $MyCred = New-Object -typename System.Management.Automation.PSCredential `
-            -argumentlist $username, $password
     }
+    $MyCred = New-Object -typename System.Management.Automation.PSCredential `
+        -argumentlist $username, $password
+
     $VC = 'eng-vmvce01.in.lab'
     Connect-VIServer -Server $VC -Credential $MyCred
 }
@@ -34,9 +35,10 @@ else {
     }
     else {
         $password = Get-Content C:\Users\$user\Documents\Prod.txt | ConvertTo-SecureString
-        $MyCred = New-Object -typename System.Management.Automation.PSCredential `
-            -argumentlist $username, $password
     }
+
+    $MyCred = New-Object -typename System.Management.Automation.PSCredential `
+        -argumentlist $username, $password
 
     foreach ($vc in $vcs) {
         $VCs = 'lax-vmvce01.inucn.com', 'dal-vmvce01.inucn.com', 'lax-vmvce01.inucn.com'

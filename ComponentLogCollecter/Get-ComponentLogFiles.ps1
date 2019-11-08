@@ -20,61 +20,93 @@ function Unzip-Files {
 #Example
 #    Unzip-Files "C:\a.zip" "C:\a"
 
-$user = [Environment]::UserName
-$machinename = [Environment]::MachineName
+function Get-ComponentLogFiles {
+    param([string]$Component)
+    param([string]$time)
+
+    $user = [Environment]::UserName
+    $machinename = [Environment]::MachineName
 
 
 
-if ($components = "playback") { 
+    if ($components = "playback") {
 
-    $componentArray = @(
-        "retriever"
-        'playback'
-        'SNMP'
-        'stream'
-        'storageprepare'
-           )
-}
+        $componentArray = @(
+            "retriever"
+            'playback'
+            'SNMP'
+            'stream'
+            'storageprepare'
+        )
+    }
 
-elseif ($components = "Screens") {
-    $componentArray = @(
-        'call_server'
-        'ScreenCapture'
-        'SIPStack'
-        'RCM'
-       )
-}
+    elseif ($components = "Screens") {
+        $componentArray = @(
+            'call_server'
+            'ScreenCapture'
+            'SIPStack'
+            'RCM'
+        )
+    }
 
 
 
-elseif ($components = "Streaming") {
-    $componentArray = @(
-        'screen'
-        'callserver'
-        'NiceApplications'
-    )
-}
-<#
-elseif ($components = "Screens") {
-    $componentArray = @(
-        'screen'
-        'callserver'
-    )
-}
-elseif ($components = "Screens") {
+    elseif ($components = "Streaming") {
+        $componentArray = @(
+            'screen'
+            'callserver'
+            'NiceApplications'
+        )
+    }
+    <#
+elseif ($components = "Voice") {
     $componentArray = @(
         'screen'
         'callserver'
     )
 }
-elseif ($components = "Screens") {
+elseif ($components = "Login") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+    )
+}
+elseif ($components = "QP") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+    )
+}
+
+elseif ($components = "Reporter") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+    )
+}
+
+elseif ($components = "Implementation") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+    )
+}
+
+elseif ($components = "Monitor") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+    )
+}
+
+elseif ($components = "Encryption") {
     $componentArray = @(
         'screen'
         'callserver'
     )
 }
 #>
-<#
+    <#
 'WCF'
 'connectionmanager'
 'ipcapture'
@@ -93,33 +125,34 @@ elseif ($components = "Screens") {
 'log'
 #>
 
-$datetime = get-date -f MMddmm
-$temp = "D:\temp\"
-$logpath = 'D:\Program Files\NICE Systems\Logs\'
-$path = "$components" + "Files" + "-" + "$machinename" + "-" + "$datetime"
-$zip = "$path" + ".zip"
-$zipfile = "$temp" + "$zip"
-$NewPath = "$temp" + "$path"
-New-Item -Path $NewPath -ItemType Directory
+    $datetime = get-date -f MMddmm
+    $temp = "D:\temp\"
+    $logpath = 'D:\Program Files\NICE Systems\Logs\'
+    $path = "$components" + "Files" + "-" + "$machinename" + "-" + "$datetime"
+    $zip = "$path" + ".zip"
+    $zipfile = "$temp" + "$zip"
+    $NewPath = "$temp" + "$path"
+    New-Item -Path $NewPath -ItemType Directory
 
-foreach ($component in $componentArray) {
-    $string = [regex] "$component"
+    foreach ($component in $componentArray) {
+        $string = [regex] "$component"
 
 
-    #$logs = Get-ChildItem -Path $logpath - -Filter *"$string"*.*
-    $logs = gci -Path $logpath | ? -FilterScript { $_.name -match "$string" }
+        #$logs = Get-ChildItem -Path $logpath - -Filter *"$string"*.*
+        $logs = Get-ChildItem -Path $logpath | Where-Object { $_.CreationTime -gt (Get-Date).AddDays(-$time) } AND where -FilterScript { $_.name -match "$string" }
 
-    foreach ($log in $logs) {
+        foreach ($log in $logs) {
 
-        Copy-Item -Filter *.* -Path $log.FullName -Recurse -Destination $NewPath 
+            Copy-Item -Filter *.* -Path $log.FullName -Recurse -Destination $NewPath
+
+        }
+        #Copy-Item -Filter *"$string"*.* -ErrorAction SilentlyContinue -Path "$logpath\" + "$string*"" -Destination $NewPath
+        #Copy-Item -Filter *.* -Path 'D:\Program Files\NICE Systems\Logs\RetrieverWCFService' -Recurse -Destination $NewPath
+        #Copy-Item -Filter *.* -Path 'D:\Program Files\NICE Systems\Logs\RetrieverWCFService.SystemFramework\Log' -Recurse -Destination $NewPath
+        #Copy-Item -Filter *.* -Path 'D:\Program Files\NICE Systems\Logs\RetrieverWCFService.WCFPublisher\Log' -Recurse -Destination $NewPath
+        #Copy-Item -Filter *.DMP -Path "C:\Users\$user\AppData\Local\Temp\" -Recurse -Destination $NewPath
 
     }
-    #Copy-Item -Filter *"$string"*.* -ErrorAction SilentlyContinue -Path "$logpath\" + "$string*"" -Destination $NewPath
-    #Copy-Item -Filter *.* -Path 'D:\Program Files\NICE Systems\Logs\RetrieverWCFService' -Recurse -Destination $NewPath
-    #Copy-Item -Filter *.* -Path 'D:\Program Files\NICE Systems\Logs\RetrieverWCFService.SystemFramework\Log' -Recurse -Destination $NewPath
-    #Copy-Item -Filter *.* -Path 'D:\Program Files\NICE Systems\Logs\RetrieverWCFService.WCFPublisher\Log' -Recurse -Destination $NewPath
-    #Copy-Item -Filter *.DMP -Path "C:\Users\$user\AppData\Local\Temp\" -Recurse -Destination $NewPath
-
 }
 
 Zip-Files -zipfilename $zipfile -sourcedir $NewPath

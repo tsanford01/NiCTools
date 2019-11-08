@@ -1,4 +1,5 @@
-﻿function Zip-Files( $zipfilename, $sourcedir ) {
+﻿
+function Zip-Files( $zipfilename, $sourcedir ) {
     Add-Type -Assembly System.IO.Compression.FileSystem
     $compressionLevel = [System.IO.Compression.CompressionLevel]::Optimal
     [System.IO.Compression.ZipFile]::CreateFromDirectory($sourcedir,
@@ -22,48 +23,57 @@ function Unzip-Files {
 $user = [Environment]::UserName
 $machinename = [Environment]::MachineName
 
+
+
 if ($components = "playback") { 
 
     $componentArray = @(
-        'retriever'
+        "retriever"
         'playback'
+        'SNMP'
         'stream'
         'storageprepare'
-    )
+           )
 }
 
 elseif ($components = "Screens") {
     $componentArray = @(
-        'screen'
-        'callserver'
-    )
+        'call_server'
+        'ScreenCapture'
+        'SIPStack'
+        'RCM'
+       )
 }
 
-elseif ($components = "Screens") {
-    $componentArray = @(
-        'screen'
-        'callserver'
-    )
-}
-elseif ($components = "Screens") {
-    $componentArray = @(
-        'screen'
-        'callserver'
-    )
-}
-elseif ($components = "Screens") {
-    $componentArray = @(
-        'screen'
-        'callserver'
-    )
-}
-elseif ($components = "Screens") {
-    $componentArray = @(
-        'screen'
-        'callserver'
-    )
-}
 
+
+elseif ($components = "Streaming") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+        'NiceApplications'
+    )
+}
+<#
+elseif ($components = "Screens") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+    )
+}
+elseif ($components = "Screens") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+    )
+}
+elseif ($components = "Screens") {
+    $componentArray = @(
+        'screen'
+        'callserver'
+    )
+}
+#>
 <#
 'WCF'
 'connectionmanager'
@@ -101,7 +111,7 @@ foreach ($component in $componentArray) {
 
     foreach ($log in $logs) {
 
-        Copy-Item -Filter *.* -Path $log.FullName -Recurse -Destination $NewPath
+        Copy-Item -Filter *.* -Path $log.FullName -Recurse -Destination $NewPath 
 
     }
     #Copy-Item -Filter *"$string"*.* -ErrorAction SilentlyContinue -Path "$logpath\" + "$string*"" -Destination $NewPath

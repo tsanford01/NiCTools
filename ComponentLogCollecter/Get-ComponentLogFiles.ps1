@@ -21,7 +21,7 @@ function Unzip-Files {
 #    Unzip-Files "C:\a.zip" "C:\a"
 
 function Get-ComponentLogFiles {
-    param([string]$Component)
+    param([string]$Components)
     param([string]$time)
 
     $user = [Environment]::UserName

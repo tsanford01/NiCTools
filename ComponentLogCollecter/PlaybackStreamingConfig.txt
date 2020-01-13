@@ -1,0 +1,1 @@
+d:\Program Files\NICE Systems\NICE Stream Server\Bin\NiceApplications.Playback.Streaming.Startup.exe.config

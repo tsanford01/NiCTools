@@ -1,0 +1,1290 @@
+{
+    "US1": [
+        {
+            "Servers": [
+                {
+                    "Server": "lax-enapp01",
+                    "ClusterName": [
+                        "lax-appclgr"
+                    ],
+                    "Role": [
+                        ""
+                    ],
+                    "IPAddress": [
+                        ""
+                    ],
+                    "Subnet": "",
+                    "Services": [
+                        {
+                            "Service": [
+                                {
+                                    "Position": "1",
+                                    "Name": "SystemAdminService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": "NiceApplications.SystemAdministrator.Host.exe.log",
+                                            "configfile": "NiceApplications.SystemAdministrator.Host.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": "NiceApplications.UsersAdmin.log",
+                                            "configfile": "",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": "NiceApplications.ApplicationMessages.log",
+                                            "configfile": "",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "2",
+                                    "Name": "AuditTrailService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": "NiceApplications.SystemAdministrator.Host.exe.log",
+                                            "configfile": "NiceApplications.SystemAdministrator.Host.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": "NiceApplications.UsersAdmin.log",
+                                            "configfile": "",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": "NiceApplications.ApplicationMessages.log",
+                                            "configfile": "",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "3",
+                                    "Name": "RulesManagerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "4",
+                                    "Name": "RuleEngineService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "5",
+                                    "Name": "NBAService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "6",
+                                    "Name": "AASearchController",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "7",
+                                    "Name": "CoachingServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "8",
+                                    "Name": "EvaluationServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "9",
+                                    "Name": "LocateHostService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "10",
+                                    "Name": "PlaybackAdministration",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "12",
+                                    "Name": "PBResourceManager",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "13",
+                                    "Name": "MonitorServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "15",
+                                    "Name": "NiceMyUniverse",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "16",
+                                    "Name": "InvestigationsServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "17",
+                                    "Name": "FTFQueryServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "18",
+                                    "Name": "NiceRedundancyManager",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "19",
+                                    "Name": "NiceReporterScheduler",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "20",
+                                    "Name": "ReporterEngineService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "22",
+                                    "Name": "NotificationService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "4",
+                                    "Name": "AuditTrailService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "4",
+                                    "Name": "RuleEngineService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "Processes": [
+                        "San Francisco"
+                    ],
+                    "Logs": [
+                        "USA"
+                    ],
+                    "LogConfig": [
+                        "52917"
+                    ]
+                },
+                {
+                    "Server": "lax-enapp02",
+                    "ClusterName": [
+                        "lax-appclgr"
+                    ],
+                    "Role": [
+                        ""
+                    ],
+                    "IPAddress": [
+                        ""
+                    ],
+                    "Subnet": "",
+                    "Services": [
+                        {
+                            "Service": [
+                                {
+                                    "Position": "1",
+                                    "Name": "SystemAdminService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": "NiceApplications.SystemAdministrator.Host.exe.log",
+                                            "configfile": "NiceApplications.SystemAdministrator.Host.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": "NiceApplications.UsersAdmin.log",
+                                            "configfile": "",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": "NiceApplications.ApplicationMessages.log",
+                                            "configfile": "",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "2",
+                                    "Name": "AuditTrailService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": "NiceApplications.SystemAdministrator.Host.exe.log",
+                                            "configfile": "NiceApplications.SystemAdministrator.Host.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": "NiceApplications.UsersAdmin.log",
+                                            "configfile": "",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": "NiceApplications.ApplicationMessages.log",
+                                            "configfile": "",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "3",
+                                    "Name": "RulesManagerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "4",
+                                    "Name": "RuleEngineService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "5",
+                                    "Name": "NBAService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "6",
+                                    "Name": "AASearchController",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "7",
+                                    "Name": "CoachingServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "8",
+                                    "Name": "EvaluationServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "9",
+                                    "Name": "LocateHostService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "10",
+                                    "Name": "PlaybackAdministration",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "12",
+                                    "Name": "PBResourceManager",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "13",
+                                    "Name": "MonitorServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "15",
+                                    "Name": "NiceMyUniverse",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "16",
+                                    "Name": "InvestigationsServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "17",
+                                    "Name": "FTFQueryServerService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "18",
+                                    "Name": "NiceRedundancyManager",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "19",
+                                    "Name": "NiceReporterScheduler",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "20",
+                                    "Name": "ReporterEngineService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "22",
+                                    "Name": "NotificationService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "4",
+                                    "Name": "AuditTrailService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Position": "4",
+                                    "Name": "RuleEngineService",
+                                    "Processes": [
+                                        {
+                                            "Name": ""
+                                        }
+                                    ],
+                                    "Logs": [
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        },
+                                        {
+                                            "log": ".log",
+                                            "configfile": ".config",
+                                            "value": "INFO,WARN,ERROR,DEBUG"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "Processes": [
+                        "San Francisco"
+                    ],
+                    "Logs": [
+                        "USA"
+                    ],
+                    "LogConfig": [
+                        "52917"
+                    ]
+                },
+                {
+                    "Server": "lax-enstr01",
+                    "IPAddress": [
+                        "207.166.95.107"
+                    ],
+                    "Subnet": "255.255.255.0",
+                    "Services": [
+                        {
+                            "Service": [
+                                {
+                                    "Position": "1",
+                                    "Name": "PlaybackStreaming",
+                                    "Processes": [
+                                        {
+                                            "Name": "NiceApplications.Playback.Streaming.Startup",
+                                            "id": ""
+                                        }
+                                    ],
+                                    "configurations": [
+                                        {
+                                            "exe": "NiceApplications.Playback.Administration.Startup.exe",
+                                            "configfile": "NiceApplications.Playback.Administration.Startup.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": ""
+                                        },
+                                        {
+                                            "exe": "NiceApplications.Playback.Streaming.Encoder.exe",
+                                            "configfile": "NiceApplications.Playback.Streaming.Encoder.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": ""
+                                        },
+                                        {
+                                            "exe": "NiceApplications.Playback.Streaming.Startup.exe",
+                                            "configfile": "NiceApplications.Playback.Streaming.Startup.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": "D:\\program files\\nice systems\\logs\\NiceApplications.Playback.Streaming.Startup\\PlaybackStreaming.txt"
+                                        },
+                                        {
+                                            "exe": "",
+                                            "configfile": "NiceApplications.Playback.Streaming.Startup.SystemFramework.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": "D:\\program files\\nice systems\\logs\\NiceApplications.Playback.Streaming.Startup\\NiceApplications.PlaybackStreaming.SystemFramework.log"
+                                        },
+                                        {
+                                            "exe": "",
+                                            "configfile": "NiceApplications.Playback.Streaming.Startup.WCFPublisher.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": "D:\\program files\\nice systems\\logs\\NiceApplications.Playback.Streaming.Startup\\NiceApplications.Playback.Streaming.Startup.WCFPublisher.log"
+                                        },
+                                        {
+                                            "exe": "NiceApplications.Playback.Streaming.StreamingWMSAdministrator.exe",
+                                            "configfile": "NiceApplications.Playback.Streaming.StreamingWMSAdministrator.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": ""
+                                        },
+                                        {
+                                            "exe": "",
+                                            "configfile": "NiceLog.SAFileRetriever.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": "D:\\program files\\nice systems\\logs\\NiceLog.SAFileRetriever\\log\\NiceLog.SAFileRetriever.log"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Server": "lax-enstr02",
+                    "IPAddress": [
+                        "207.166.95.108"
+                    ],
+                    "Subnet": "255.255.255.0",
+                    "Services": [
+                        {
+                            "Service": [
+                                {
+                                    "Position": "1",
+                                    "Name": "PlaybackStreaming",
+                                    "Processes": [
+                                        {
+                                            "Name": "NiceApplications.Playback.Streaming.Startup",
+                                            "id": ""
+                                        }
+                                    ],
+                                    "configurations": [
+                                        {
+                                            "exe": "NiceApplications.Playback.Administration.Startup.exe",
+                                            "configfile": "NiceApplications.Playback.Administration.Startup.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": ""
+                                        },
+                                        {
+                                            "exe": "NiceApplications.Playback.Streaming.Encoder.exe",
+                                            "configfile": "NiceApplications.Playback.Streaming.Encoder.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": ""
+                                        },
+                                        {
+                                            "exe": "NiceApplications.Playback.Streaming.Startup.exe",
+                                            "configfile": "NiceApplications.Playback.Streaming.Startup.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": "D:\\program files\\nice systems\\logs\\NiceApplications.Playback.Streaming.Startup\\PlaybackStreaming.txt"
+                                        },
+                                        {
+                                            "exe": "",
+                                            "configfile": "NiceApplications.Playback.Streaming.Startup.SystemFramework.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": "D:\\program files\\nice systems\\logs\\NiceApplications.Playback.Streaming.Startup\\NiceApplications.PlaybackStreaming.SystemFramework.log"
+                                        },
+                                        {
+                                            "exe": "",
+                                            "configfile": "NiceApplications.Playback.Streaming.Startup.WCFPublisher.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": "D:\\program files\\nice systems\\logs\\NiceApplications.Playback.Streaming.Startup\\NiceApplications.Playback.Streaming.Startup.WCFPublisher.log"
+                                        },
+                                        {
+                                            "exe": "NiceApplications.Playback.Streaming.StreamingWMSAdministrator.exe",
+                                            "configfile": "NiceApplications.Playback.Streaming.StreamingWMSAdministrator.exe.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": ""
+                                        },
+                                        {
+                                            "exe": "",
+                                            "configfile": "NiceLog.SAFileRetriever.config",
+                                            "value": "INFO,WARN,ERROR,DEBUG",
+                                            "log": "D:\\program files\\nice systems\\logs\\NiceLog.SAFileRetriever\\log\\NiceLog.SAFileRetriever.log"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

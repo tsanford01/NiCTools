@@ -1,0 +1,112 @@
+{
+    "@type": "MessageCard",
+    "@context": "https://schema.org/extensions",
+    "summary": "{PID}",
+    "themeColor": "0078D7",
+    "title": "Problem Alert: \"{ProblemTitle}\"",
+    "sections": [
+        {
+            "activityTitle": "{ProblemImpact}",
+            "activitySubtitle": "{ProblemSeverity}",
+            "facts": [
+                {
+                    "name": "State:",
+                    "value": "{State}"
+                },
+                {
+                    "name": "Problem ID:",
+                    "value": "{ProblemID}"
+                },
+                {
+                    "name": "URL:",
+                    "value": "{ProblemURL}"
+                }
+            ],
+            "text": "{ProblemDetailsText}"
+        }
+    ],
+    "potentialAction": [
+        {
+            "@type": "ActionCard",
+            "name": "Add a comment",
+            "inputs": [
+                {
+                    "@type": "TextInput",
+                    "id": "comment",
+                    "title": "Enter your comment",
+                    "isMultiline": "true"
+                }
+            ],
+            "actions": [
+                {
+                    "@type": "HttpPOST",
+                    "name": "OK",
+                    "target": "https://nqm22429.live.dynatrace.com/api/v1/problem/details/{ProblemID}/comments",
+                    "headers": [
+                        {
+                            "name": "Content-Type",
+                            "value": "application/json"
+                        },
+                        {
+                            "name": "Authorization",
+                            "value": "Basic dHJhdmlzLnNhbmZvcmQ6TiFjMzBmZiFjMzQuYzBt"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "HttpPOST",
+            "name": "Close",
+            "target": "https://nqm22429.live.dynatrace.com/api/v1/problem/details/{ProblemID}/close"
+        },
+        {
+            "@type": "HttpPOST",
+            "name": "Create Jira Story",
+            "targets": {
+                "type": "Action.Http",
+                "title": "Create Story",
+                "method": "POST",
+                "url": "https://tlvjira02.nice.com/rest/api/2/issue",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "Basic dHJhdmlzLnNhbmZvcmQ6TiFjMzBmZiFjMzQuYzBt"
+                },
+                "body": {
+                    "fields": {
+                        "project": {
+                            "id": "11800"
+                        },
+                        "summary": "{ProblemTitle}",
+                        "description": "{ProblemDetailsText}",
+                        "issuetype": {
+                            "id": "10001"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "@type": "OpenUri",
+            "name": "View in Dynatrace",
+            "targets": [
+                {
+                    "os": "default",
+                    "uri": "{ProblemURL}"
+                },
+                {
+                    "os": "iOS",
+                    "uri": "{ProblemURL}"
+                },
+                {
+                    "os": "android",
+                    "uri": "{ProblemURL}"
+                },
+                {
+                    "os": "windows",
+                    "uri": "{ProblemURL}"
+                }
+            ]
+        }
+    ]
+}

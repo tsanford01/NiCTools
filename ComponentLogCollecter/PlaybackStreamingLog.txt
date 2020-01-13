@@ -1,0 +1,39 @@
+lax-enstr01
+
+\\lax-enstr01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup\PlaybackStreaming.txt
+\\lax-enstr01\D$\Program Files\NICE Systems\Logs \NiceApplications.Playback.Streaming.Startup.SystemFramework\Log\NiceApplications.Playback.Streaming.Startup.SystemFramework.log 
+\\lax-enstr01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup.WCFPublisher\Log\NiceApplications.Playback.Streaming.Startup.WCFPublisher.txt
+\\lax-enstr01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup\StoragePrepare.txt
+
+Lax-enstr02
+
+\\lax-enstr02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup\PlaybackStreaming.txt
+\\lax-enstr02\D$\Program Files\NICE Systems\Logs \NiceApplications.Playback.Streaming.Startup.SystemFramework\Log\NiceApplications.Playback.Streaming.Startup.SystemFramework.log 
+\\lax-enstr02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup.WCFPublisher\Log\NiceApplications.Playback.Streaming.Startup.WCFPublisher.txt
+\\lax-enstr02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup\StoragePrepare.txt
+
+Lax-enapp01
+
+PlaybackAdmin
+\\lax-enapp01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Administration.Startup\LocateLog.txt
+\\lax-enapp01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Administration.Startup\PlaybackAdministration.txt
+\\lax-enapp01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Administration.Startup.SystemFramework\Log\NiceApplications.Playback.Administration.Startup.SystemFramework.log
+\\lax-enapp01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Administration.Startup.WCFPublisher\Log\NiceApplications.Playback.Administration.Startup.WCFPublisher.log
+
+PlaybackStreaming (if desired)
+\\lax-enapp01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup\PlaybackStreaming.txt
+\\lax-enapp01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup\StoragePrepare.txt
+\\lax-enapp01\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup.WCFPublisher\Log\NiceApplications.Playback.Streaming.Startup.WCFPublisher.log
+
+Lax-enapp02
+
+PlaybackAdmin
+\\lax-enapp02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Administration.Startup\LocateLog.txt
+\\lax-enapp02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Administration.Startup\PlaybackAdministration.txt
+\\lax-enapp02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Administration.Startup.SystemFramework\Log\NiceApplications.Playback.Administration.Startup.SystemFramework.log
+\\lax-enapp02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Administration.Startup.WCFPublisher\Log\NiceApplications.Playback.Administration.Startup.WCFPublisher.log
+
+PlaybackStreaming (if desired)
+\\lax-enapp02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup\PlaybackStreaming.txt
+\\lax-enapp02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup\StoragePrepare.txt
+\\lax-enapp02\D$\Program Files\NICE Systems\Logs\NiceApplications.Playback.Streaming.Startup.WCFPublisher\Log\NiceApplications.Playback.Streaming.Startup.WCFPublisher.log

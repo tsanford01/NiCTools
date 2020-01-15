@@ -1,16 +1,20 @@
 
 function Set-UserCreds {
-    $enviro = Read-Host "What Environment? Prod, Lab or Other?"
+    param(
+        [parameter(Mandatory, ValueFromPipeline)]
+        [Object[]]$domain
+    )
+    #$enviro = Read-Host "What Environment? Prod, Lab or Other?"
     $noCreds = "true"
-    #param($enviro)
+
     #Set Lab Credentials
-    if ($enviro -like "Lab") {
-        $domain = 'ucn\'
+    if ($domain -like "Lab") {
+        $domainname = 'ucn\'
         $user = [Environment]::UserName
-        $username = $domain + $user
+        $username = $domainname + $user
         $noCreds = "false"
-        $LabCreds = Test-Path -Path "C:\Users\$user\Documents\Lab.txt"
-    
+        $LabCreds = Test-Path -Path "C:\Users\$user\Documents\$domain.txt"
+
         if ($LabCreds -like 'False') {
             $pswdFile = read-host -Prompt "Enter Lab Password" -assecurestring | convertfrom-securestring | `
                 out-file C:\Users\$user\Documents\Lab.txt
@@ -25,19 +29,19 @@ function Set-UserCreds {
         #Connect-VIServer -Server $VC -Credential $MyCred
     }
 
-    if ($enviro -like "Prod") {
-        $domain = 'inucn.com'
+    if ($domain -like "Prod") {
+        $domainname = 'inucn.com'
         $user = [Environment]::UserName
-        $username = $user + '@' + $domain
+        $username = $user + '@' + $domainname
         $noCreds = "false"
-        $ProdCreds = Test-Path -Path "C:\Users\$user\Documents\Prod.txt"
-    
+        $ProdCreds = Test-Path -Path "C:\Users\$user\Documents\$domain.txt"
+
         if ($ProdCreds -like 'False') {
             $pswdFile = read-host -Prompt "Enter Prod Password" -assecurestring | convertfrom-securestring | `
                 out-file C:\Users\$user\Documents\Prod.txt
         }
         else {
-            $password = Get-Content C:\Users\$user\Documents\Prod.txt | ConvertTo-SecureString
+            $password = Get-Content C:\Users\$user\Documents\$domain.txt | ConvertTo-SecureString
         }
 
         $MyCred = New-Object -typename System.Management.Automation.PSCredential `
@@ -46,24 +50,24 @@ function Set-UserCreds {
         #foreach ($vc in $vcs) {
         #    $VCs = 'lax-vmvce01.inucn.com', 'dal-vmvce01.inucn.com', 'lax-vmvce01.inucn.com'
         #    Connect-VIServer -Server $VC -Credential $MyCred
-        #} 
+        #}
     }
-    if ($enviro -like "Other") {
-        
-        $domain = Read-Host "Please Set domain name"
+    if ($domain -like "Other") {
+
+        $domainname = Read-Host "Please Set domain name"
         $user = [Environment]::UserName
         $LabCreds = Test-Path -Path "C:\Users\$user\Documents\$domain.txt"
         if ($LabCreds -like 'False') {
-            $username = $domain + $user
+            $username = $domainname + $user
             $ConfirmDomain = Read-Host "$username, Is this correct? Y or N?"
             if ($ConfirmDomain -contains "N") {
-                $username = $user + '@' + $domain
+                $username = $user + '@' + $domainname
                 $ConfirmDomain = Read-Host "$username, Is this correct? Y or N?"
                 if ($ConfirmDomain -contains "N") {
                     $username = Read-Host "Please write username and domain in the format required"
                 }
             }
-            
+
             $pswdFile = read-host -Prompt "Enter $domain Password" -assecurestring | convertfrom-securestring | `
                 out-file C:\Users\$user\Documents\$domain.txt
         }
@@ -79,4 +83,5 @@ function Set-UserCreds {
         Set-UserCreds
     }
     return $MyCred
+    return $domain
 }

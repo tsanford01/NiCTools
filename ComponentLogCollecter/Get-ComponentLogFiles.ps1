@@ -21,7 +21,7 @@ function Unzip-Files {
 #    Unzip-Files "C:\a.zip" "C:\a"
 
 function Get-ComponentLogFiles {
-    param([string]$Component)
+    param([string]$Components)
     param([string]$time)
 
     $user = [Environment]::UserName
@@ -37,6 +37,9 @@ function Get-ComponentLogFiles {
             'SNMP'
             'stream'
             'storageprepare'
+            'screen'
+            'callserver'
+            'NiceApplications'
         )
     }
 
@@ -125,10 +128,10 @@ elseif ($components = "Encryption") {
 'log'
 #>
 
-    $datetime = get-date -f MMddmm
+    $datetime = Get-Date -Format “ddMMyyyyhhmmss”
     $temp = "D:\temp\"
     $logpath = 'D:\Program Files\NICE Systems\Logs\'
-    $path = "$components" + "Files" + "-" + "$machinename" + "-" + "$datetime"
+    $path = "$components" + "-" + "$machinename" + "-" + "$datetime"
     $zip = "$path" + ".zip"
     $zipfile = "$temp" + "$zip"
     $NewPath = "$temp" + "$path"
@@ -136,11 +139,11 @@ elseif ($components = "Encryption") {
 
     foreach ($component in $componentArray) {
         $string = [regex] "$component"
-
+        $timeline = (Get-Date).AddDays(-$time)
 
         #$logs = Get-ChildItem -Path $logpath - -Filter *"$string"*.*
-        $logs = Get-ChildItem -Path $logpath | Where-Object { $_.CreationTime -gt (Get-Date).AddDays(-$time) } AND where -FilterScript { $_.name -match "$string" }
-
+        #$logs = Get-ChildItem -Path $logpath | Where-Object { $_.CreationTime -gt (Get-Date).AddDays(-$time) } AND where -FilterScript { $_.name -match "$string" }
+        $logs = Get-ChildItem -Path $logpath\* | Where-Object -FilterScript { $_.name -match "$string" -and $_.LastWriteTime -lt $timeline }
         foreach ($log in $logs) {
 
             Copy-Item -Filter *.* -Path $log.FullName -Recurse -Destination $NewPath
@@ -158,7 +161,7 @@ elseif ($components = "Encryption") {
 Zip-Files -zipfilename $zipfile -sourcedir $NewPath
 $Storage = "\\lax-enarc02\S$\ComponentLogFiles\"
 $Storagefile = "$Storage" + "$Zip"
-Move-Item -Path $zipfile "$storageDest"
+Move-Item -Path $zipfile "$Storage"
 
 if (Test-Path -Path $Storagefile) {
     Remove-Item -Path $NewPath -Recurse -Force -ErrorAction SilentlyContinue
